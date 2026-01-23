@@ -108,3 +108,40 @@ li {
     color: #888;
     font-size: 0.9em;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 90%;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;         
+    list-style: none;  
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
