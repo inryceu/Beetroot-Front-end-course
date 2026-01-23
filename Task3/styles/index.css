@@ -1,3 +1,5 @@
+@import 'normalize.css';
+
 html {    
     max-width: 1440px;
     font-family: 'Open Sans';
