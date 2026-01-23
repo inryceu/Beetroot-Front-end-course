@@ -1,0 +1,145 @@
+html {    
+    max-width: 1440px;
+    font-family: 'Open Sans';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    height: 80px;
+    border-bottom: 1px solid #828282;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;           
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 18px;
+}
+
+.main-photo {
+    width: 100%;
+    height: 387px;
+    overflow: hidden;
+}
+
+.main-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1{
+    font-size: 48px;
+    padding-top: 100px;
+}
+
+h2 {
+    font-size: 34px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-block{
+    height: 480px;
+}
+
+.about-me-container{
+    padding-top: 50px;
+    font-size: 18px;
+    text-align: center; 
+}
+
+.about-me-content{
+    max-width: 480px;
+    padding-bottom: 30px;
+    margin: 10px auto; 
+}
+
+.skills, .contacts {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    padding-bottom: 30px;
+    text-align: center; 
+    padding-bottom: 50px;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: row;
+    gap: 97px;           
+    padding-top: 50px;
+    margin: 0;
+}
+
+.skills ul li {
+    list-style: none;
+}
+
+.portfolio-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-container img{
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+    padding-top: 50px;
+}
+
+.portfolio-content{
+    padding-top: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.button-container{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.button-container img{
+    padding-top: 30px;
+}
+
+.message-button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+}
+
+.caption {
+    color: #828282;
+    font-size: 14px;
+    padding-top: 60px;
+}
