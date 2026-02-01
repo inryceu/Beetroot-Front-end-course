@@ -1,0 +1,38 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.container ul {
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
+}
+
+.container ul li {
+    list-style: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: #4F4F4F;
+    padding-bottom: 10px;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: #2F80ED;
+}

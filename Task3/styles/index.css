@@ -91,6 +91,38 @@ h2 {
 
 .skills ul li {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+}
+
+.skills ul li p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #828282;
+    width: 90px;
+    height: 40px;
+}
+
+
+.star-holder {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;           
+    justify-content: center;
+    align-items: center; 
+    padding-top: 10px;
+}
+
+.star-holder img {
+    width: 20px;
+    height: 20px;
 }
 
 .portfolio-container {
