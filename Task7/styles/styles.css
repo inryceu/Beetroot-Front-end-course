@@ -1,0 +1,143 @@
+body {
+    background-color: #353942;
+    color: white;
+    font-family: "Trebuchet MS", Trebuchet, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.app-wrapper {
+    width: 800px;
+    border: 5px solid white; 
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #454c57;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    color: #f08080;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    text-transform: none;
+}
+
+header p {
+    color: #f08080;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.shopping-list {
+    list-style: none;
+    width: 530px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: all .1s ease-in;
+}
+
+li:nth-child(odd) {
+    background-color: #8e85a0;
+}
+
+li:nth-child(even) {
+    background-color: #7c748c;
+}
+
+li:hover {
+    background-color: #635c71;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+li:active {
+    background-color: #ff4d4d;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 0;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+
+.label {
+    font-size: 18px;
+}
+
+input:checked + .label {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+input:checked + .label .note {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.note::before {
+    content: " (";
+}
+
+.note::after {
+    content: ")";
+}
+
+.note {
+    font-size: 11px;
+    opacity: 0.7;
+}
+
+footer {
+    background-color: #454c57;
+    text-align: center;
+    width: 530px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #f08080;
+    margin: 0;
+    font-size: 18px;
+}
