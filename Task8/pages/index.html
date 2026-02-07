@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація користувача</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <form id="registrationForm" novalidate>
+        <h2>Реєстрація</h2>
+
+        <label>
+            Повне ім’я
+            <input type="text" id="fullName" required>
+        </label>
+
+        <label>
+            Email
+            <input type="email" id="email" required>
+        </label>
+
+        <label>
+            Пароль
+            <input type="password" id="password" required>
+        </label>
+
+        <label>
+            Підтвердження пароля
+            <input type="password" id="confirmPassword" required>
+        </label>
+
+        <label>Стать</label>
+        <div class="gender-group">
+            <label>
+                <input type="radio" name="gender" value="male" required> Чоловіча
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Жіноча
+            </label>
+        </div>
+
+        <label>
+            Вік
+            <input type="number" id="age" min="1" required>
+        </label>
+
+        <label>
+            Курс
+            <select id="course" required>
+                <option value="">-- Оберіть курс --</option>
+                <option value="Front-End">Front-End</option>
+                <option value="Back-End">Back-End</option>
+                <option value="Project Management">Project Management</option>
+                <option value="QA Manual">QA Manual</option>
+            </select>
+        </label>
+
+        <label>
+            Повна адреса проживання
+            <textarea id="address" rows="3" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
+        </label>
+
+        <label>
+            <input type="checkbox" id="agreement" required>
+            Я погоджуюсь з умовами конфіденційності
+        </label>
+
+        <div class="error" id="error"></div>
+
+        <button type="submit">Зареєструватись</button>
+    </form>
+
+    <script async src="../scripts/index.js"></script>
+</body>
+
+</html>
