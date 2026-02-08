@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  transition: all .1s ease-in;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, sans-serif;
+  background: #3399CC;
+  color: #fff;
+}
+
+.forecast {
+  width: 1170px;
+  margin: 30px auto;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.forecast-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  border: 2px solid #fff;
+}
+
+.forecast-item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 30px 10px;
+  border: 2px solid #fff;
+  opacity: 0.8;
+}
+
+.forecast-item:hover {
+  opacity: 1;
+}
+
+.w-50 { width: 50%; }
+.w-25 { width: 25%; }
+.w-100 { width: 100%; }
+
+.city-name {
+  font-size: 22px;
+  font-weight: 400px;
+  margin-bottom: 10px;
+}
+
+.city-temp {
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(256, 265, 265, 0.7);
+}
+
+.city-temp i {
+  font-size: 26px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.bg-1  { background: #3399CC; }
+.bg-2  { background: #33CCCC; }
+.bg-3  { background: #996699; }
+.bg-4  { background: #C24747; }
+.bg-5  { background: #E2674A; }
+.bg-6  { background: #FFCC66; }
+.bg-7  { background: #99CC99; }
+.bg-8  { background: #669999; }
+.bg-9  { background: #CC6699; }
+.bg-10 { background: #339966; }
+.bg-11 { background: #666699; }
+
+.forecast-footer {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
