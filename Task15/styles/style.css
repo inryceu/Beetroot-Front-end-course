@@ -1,0 +1,197 @@
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-header .subtitle {
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.section-header .title {
+  color: #ffc107;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 10px 0 0 0;
+}
+.section-header .divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto 0;
+  width: 60%;
+}
+.section-header .divider::before, .section-header .divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #ffc107;
+}
+.section-header .divider .divider-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 15px;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.team-card::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #ffc107;
+  transform: translateX(-50%);
+}
+.team-card .card-column {
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+.team-card .image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-card .image-column .photo-frame {
+  position: relative;
+  padding: 20px;
+}
+.team-card .image-column .photo-frame .inner-frame {
+  border: 1px solid #ffc107;
+  padding: 10px;
+  background: #fff;
+}
+.team-card .image-column .photo-frame .inner-frame .member-photo {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+.team-card .image-column .photo-frame .corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-color: #ffc107;
+  border-style: solid;
+}
+.team-card .image-column .photo-frame .corner.top-left {
+  top: 0;
+  left: 0;
+  border-width: 1px 0 0 1px;
+}
+.team-card .image-column .photo-frame .corner.top-right {
+  top: 0;
+  right: 0;
+  border-width: 1px 1px 0 0;
+}
+.team-card .image-column .photo-frame .corner.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 1px 1px;
+}
+.team-card .image-column .photo-frame .corner.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-width: 0 1px 1px 0;
+}
+.team-card .info-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team-card .info-column .name {
+  font-size: 28px;
+  color: #333333;
+  margin: 0 0 5px 0;
+}
+.team-card .info-column .role {
+  font-size: 16px;
+  color: #777777;
+  font-weight: 300;
+  margin: 0 0 25px 0;
+}
+.team-card .info-column .social-links {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.team-card .info-column .social-links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  transition: border-color 0.3s ease;
+}
+.team-card .info-column .social-links li a img {
+  width: 35px;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.team-card .info-column .social-links li a:hover {
+  border-color: #ffc107;
+}
+.team-card .info-column .social-links li a:hover img {
+  opacity: 1;
+}
+.team-card .info-column .description {
+  font-size: 13px;
+  color: #333333;
+  line-height: 1.8;
+  margin: 0 0 20px 0;
+}
+.team-card .info-column .dots-decorator {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+.team-card .info-column .dots-decorator span {
+  width: 8px;
+  height: 4px;
+  background-color: #ffc107;
+}
+.team-card .info-column .dots-decorator span.wide {
+  width: 16px;
+}
+.team-card .info-column .btn-profile {
+  padding: 10px 20px;
+  border: 1px solid #ffc107;
+  color: #777777;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.team-card .info-column .btn-profile:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
