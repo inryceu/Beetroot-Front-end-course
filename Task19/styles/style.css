@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-body {
+.page-body {
     font-family: 'Inter', sans-serif;
     color: #333333;
     line-height: 1.6;
@@ -54,20 +54,20 @@ body {
     margin-bottom: 60px;
 }
 
-.content-section h2 {
+.section-title {
     font-size: 18px;
     font-weight: 700;
     color: #111111;
     margin-bottom: 20px;
 }
 
-.content-section p {
+.section-text {
     font-size: 14px;
     color: #555555;
     margin-bottom: 20px;
 }
 
-.content-section p:last-child {
+.section-text:last-child {
     margin-bottom: 0;
 }
 
@@ -92,7 +92,7 @@ body {
     text-align: left;
 }
 
-.contact-info h2 {
+.contact-title {
     font-size: 24px;
     font-weight: 600;
     color: #111111;
@@ -119,7 +119,7 @@ body {
     margin: 0;
 }
 
-.social-links a {
+.social-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,12 +131,12 @@ body {
     transition: all 0.3s ease;
 }
 
-.social-links svg {
+.social-icon {
     width: 16px;
     height: 16px;
 }
 
-.social-links a:hover {
+.social-link:hover {
     background-color: #333333;
     color: #ffffff;
     border-color: #333333;
@@ -148,6 +148,34 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.social-icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+.social-link:hover .social-icon {
+    filter: brightness(0) invert(1);
 }
 
 @media (max-width: 768px) {
@@ -189,7 +217,7 @@ body {
         margin-bottom: 25px;
     }
 
-    .contact-info h2 {
+    .contact-title {
         font-size: 20px;
     }
 }
