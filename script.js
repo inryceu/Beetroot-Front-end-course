@@ -16,6 +16,7 @@ const tasks = [
   { title: "Task 18", url: "Task18/pages/index.html" },
   { title: "Task 19", url: "Task19/pages/index.html" },
   { title: "Task 20", url: "Task20/pages/index.html" },
+  { title: "Task 22", url: "Task22/pages/index.html" },
   { title: "Task 24", url: "Task24/pages/index.html" },
   { title: "Task 25", url: "Task25/pages/index.html" },
 ];
