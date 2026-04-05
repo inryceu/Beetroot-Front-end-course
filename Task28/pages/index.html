@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Об'єкти</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="page-body">
+    <main class="main-container">
+        <h1 class="page-title">Об'єкти в JavaScript</h1>
+
+        <section class="task-section">
+            <h2 class="output-title">1. Автомобіль</h2>
+            <div id="car-info" class="info-box">Завантаження даних авто...</div>
+
+            <div class="input-group spacer-top">
+                <input type="text" id="driver-input" class="text-input" placeholder="Ім'я водія">
+                <button id="add-driver-btn" class="action-btn">Додати</button>
+                <button id="check-driver-btn" class="action-btn">Перевірити</button>
+            </div>
+            <div id="driver-output" class="result-text"></div>
+
+            <div class="input-group spacer-top">
+                <input type="number" id="distance-input" class="text-input" placeholder="Відстань (км)">
+                <button id="trip-btn" class="action-btn">Порахувати поїздку</button>
+            </div>
+            <div id="trip-output" class="result-text"></div>
+        </section>
+
+        <section class="task-section">
+            <h2 class="output-title">2. Годинник</h2>
+            <div id="time-display" class="info-box time-display">00:00:00</div>
+
+            <div class="input-group spacer-top">
+                <input type="number" id="add-hours-input" class="text-input" placeholder="Години">
+                <button id="add-hours-btn" class="action-btn">Додати</button>
+            </div>
+
+            <div class="input-group spacer-top">
+                <input type="number" id="add-mins-input" class="text-input" placeholder="Хвилини">
+                <button id="add-mins-btn" class="action-btn">Додати</button>
+            </div>
+
+            <div class="input-group spacer-top">
+                <input type="number" id="add-secs-input" class="text-input" placeholder="Секунди">
+                <button id="add-secs-btn" class="action-btn">Додати</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 class="output-title">3. Калькулятор дробів</h2>
+
+            <div class="fractions-container">
+                <div class="fraction-input-group">
+                    <input type="number" id="num1" class="text-input digit-input" placeholder="Чис.">
+                    <div class="fraction-line"></div>
+                    <input type="number" id="den1" class="text-input digit-input" placeholder="Знам.">
+                </div>
+
+                <div class="fraction-controls">
+                    <button id="frac-add" class="action-btn circle-btn">+</button>
+                    <button id="frac-sub" class="action-btn circle-btn">-</button>
+                    <button id="frac-mul" class="action-btn circle-btn">*</button>
+                    <button id="frac-div" class="action-btn circle-btn">/</button>
+                </div>
+
+                <div class="fraction-input-group">
+                    <input type="number" id="num2" class="text-input digit-input" placeholder="Чис.">
+                    <div class="fraction-line"></div>
+                    <input type="number" id="den2" class="text-input digit-input" placeholder="Знам.">
+                </div>
+            </div>
+
+            <div id="fraction-output" class="info-box spacer-top">Результат: </div>
+        </section>
+
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
