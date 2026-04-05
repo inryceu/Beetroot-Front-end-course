@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функції</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="page-body">
+    <main class="main-container">
+        <h1 class="page-title">Робота з функціями</h1>
+
+        <section class="task-section">
+            <h2 id="args-output" class="output-title">1. Кількість аргументів</h2>
+            <div class="input-group">
+                <input type="text" id="args-input" class="text-input"
+                    placeholder="Введіть значення через кому (1, text, 3)">
+                <button id="args-btn" class="action-btn">Порахувати</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="compare-output" class="output-title">2. Порівняння двох чисел</h2>
+            <div class="input-group">
+                <input type="number" id="compare-a" class="text-input" placeholder="Число 1">
+                <input type="number" id="compare-b" class="text-input" placeholder="Число 2">
+                <button id="compare-btn" class="action-btn">Порівняти</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="factorial-output" class="output-title">3. Факторіал числа</h2>
+            <div class="input-group">
+                <input type="number" id="factorial-input" class="text-input" placeholder="Введіть число" min="0">
+                <button id="factorial-btn" class="action-btn">Обчислити</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="concat-output" class="output-title">4. Злиття трьох цифр</h2>
+            <div class="input-group">
+                <input type="number" id="digit-1" class="text-input digit-input" placeholder="0-9" min="0" max="9">
+                <input type="number" id="digit-2" class="text-input digit-input" placeholder="0-9" min="0" max="9">
+                <input type="number" id="digit-3" class="text-input digit-input" placeholder="0-9" min="0" max="9">
+                <button id="concat-btn" class="action-btn">З'єднати</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="area-output" class="output-title">5. Площа прямокутника / квадрата</h2>
+            <p class="description-text">Залиште ширину порожньою для квадрата</p>
+            <div class="input-group">
+                <input type="number" id="length-input" class="text-input" placeholder="Довжина">
+                <input type="number" id="width-input" class="text-input" placeholder="Ширина (необов'язково)">
+                <button id="area-btn" class="action-btn">Знайти площу</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="perfect-output" class="output-title">6. Досконале число</h2>
+            <div class="input-group">
+                <input type="number" id="perfect-input" class="text-input" placeholder="Наприклад: 6 або 28">
+                <button id="perfect-btn" class="action-btn">Перевірити</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="perfect-range-output" class="output-title">7. Досконалі числа в діапазоні</h2>
+            <div class="input-group">
+                <input type="number" id="range-min" class="text-input" placeholder="Від">
+                <input type="number" id="range-max" class="text-input" placeholder="До">
+                <button id="perfect-range-btn" class="action-btn">Знайти</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
