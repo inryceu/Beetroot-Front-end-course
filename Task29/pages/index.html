@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список покупок</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="page-body">
+    <main class="main-container cart-layout">
+        <h1 class="page-title">Список покупок</h1>
+
+        <section class="task-section">
+            <h2 class="output-title">Додати продукт</h2>
+            <div class="input-group">
+                <input type="text" id="item-name" class="text-input" placeholder="Назва продукту">
+                <input type="number" id="item-qty" class="text-input num-input" placeholder="К-ть" min="1">
+                <input type="number" id="item-price" class="text-input num-input" placeholder="Ціна" min="0.1"
+                    step="0.1">
+                <button id="add-btn" class="action-btn">Додати</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 class="output-title">Статистика та Фільтри</h2>
+            <div class="stats-board">
+                <div class="stat-card">Загальна сума: <b id="total-sum">0.00</b></div>
+                <div class="stat-card">Сума куплених: <b id="bought-sum">0.00</b></div>
+                <div class="stat-card">Сума некуплених: <b id="unbought-sum">0.00</b></div>
+            </div>
+            <div class="input-group spacer-top">
+                <button id="sort-asc-btn" class="action-btn secondary-btn">Сортувати: Сума &uarr;</button>
+                <button id="sort-desc-btn" class="action-btn secondary-btn">Сортувати: Сума &darr;</button>
+                <button id="reset-sort-btn" class="action-btn secondary-btn">Скинути сортування</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 class="output-title">Поточний список</h2>
+            <div id="cart-output" class="cart-list">
+                <div class="empty-state">Список порожній</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
