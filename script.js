@@ -23,6 +23,7 @@ const tasks = [
   { title: "Task 27", url: "Task27/pages/index.html" },
   { title: "Task 28", url: "Task28/pages/index.html" },
   { title: "Task 29", url: "Task29/pages/index.html" },
+  { title: "Task 30", url: "Task30/pages/index.html" },
 ];
 
 const taskList = document.getElementById("task-list");

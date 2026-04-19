@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="page-body">
+
+    <section class="task-section">
+        <h2 class="section-title">1. Плейлист</h2>
+        <ol id="playlist-container" class="playlist"></ol>
+    </section>
+
+    <section class="task-section">
+        <h2 class="section-title">2. Модальне вікно</h2>
+        <button id="openModalBtn" class="action-btn">Відкрити</button>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>Привіт! Це модальне вікно.</p>
+                <button id="closeModalBtn" class="action-btn">Закрити</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="task-section">
+        <h2 class="section-title">3. Світлофор</h2>
+        <div class="traffic-light-container">
+            <div class="traffic-light">
+                <div class="light red active" id="redLight"></div>
+                <div class="light yellow" id="yellowLight"></div>
+                <div class="light green" id="greenLight"></div>
+            </div>
+            <button id="nextLightBtn" class="action-btn">Наступний колір</button>
+        </div>
+    </section>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
