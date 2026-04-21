@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search API</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="page-body">
+
+    <main class="main-container">
+        <h1 class="page-title">Movie Search Database</h1>
+
+        <section class="search-section">
+            <form id="search-form" class="search-form">
+                <input type="text" id="search-title" class="input-field" placeholder="Enter movie title..." required
+                    minlength="2">
+                <select id="search-type" class="input-field select-field">
+                    <option value="">All Types</option>
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+                </select>
+                <button type="submit" class="btn primary-btn">Search</button>
+            </form>
+            <div id="error-message" class="error-message hide"></div>
+        </section>
+
+        <section class="results-section">
+            <div id="movies-grid" class="movies-grid"></div>
+            <div id="pagination-container" class="pagination-container hide"></div>
+        </section>
+
+        <section id="details-section" class="details-section hide">
+            <div id="details-content" class="details-content"></div>
+        </section>
+    </main>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

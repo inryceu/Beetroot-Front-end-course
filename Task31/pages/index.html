@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Події</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="page-body">
+
+    <section class="task-section">
+        <h2 class="section-title">1. Текстовий редактор (Ctrl+E / Ctrl+S)</h2>
+        <div id="text-view" class="text-block">Натисни Ctrl + E, щоб редагувати цей текст.</div>
+        <textarea id="text-edit" class="text-area" style="display: none;"></textarea>
+    </section>
+
+    <section class="task-section">
+        <h2 class="section-title">2. Таблиця з сортуванням</h2>
+        <table class="sortable-table" id="data-table">
+            <thead>
+                <tr>
+                    <th data-type="string">Ім'я</th>
+                    <th data-type="number">Вік</th>
+                    <th data-type="number">Зріст (см)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Олексій</td>
+                    <td>25</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>Марія</td>
+                    <td>19</td>
+                    <td>165</td>
+                </tr>
+                <tr>
+                    <td>Іван</td>
+                    <td>30</td>
+                    <td>175</td>
+                </tr>
+                <tr>
+                    <td>Анна</td>
+                    <td>22</td>
+                    <td>170</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="task-section">
+        <h2 class="section-title">3. Зміна розміру блоку</h2>
+        <div id="resizable-box" class="resizable-box">
+            Тягни за правий нижній кут.
+            <div id="resizer" class="resizer"></div>
+        </div>
+    </section>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

@@ -19,6 +19,14 @@ const tasks = [
   { title: "Task 22", url: "Task22/pages/index.html" },
   { title: "Task 24", url: "Task24/pages/index.html" },
   { title: "Task 25", url: "Task25/pages/index.html" },
+  { title: "Task 26", url: "Task26/pages/index.html" },
+  { title: "Task 27", url: "Task27/pages/index.html" },
+  { title: "Task 28", url: "Task28/pages/index.html" },
+  { title: "Task 29", url: "Task29/pages/index.html" },
+  { title: "Task 30", url: "Task30/pages/index.html" },
+  { title: "Task 31", url: "Task31/pages/index.html" },
+  { title: "Task 32", url: "Task32/pages/index.html" },
+  { title: "Task 33", url: "Task33/pages/index.html" },
 ];
 
 const taskList = document.getElementById("task-list");

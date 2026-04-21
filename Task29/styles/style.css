@@ -1,0 +1,150 @@
+.cart-layout {
+    max-width: 800px;
+}
+
+.num-input {
+    max-width: 100px;
+}
+
+.spacer-top {
+    margin-top: 20px;
+}
+
+.stats-board {
+    display: flex;
+    gap: 15px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    flex-grow: 1;
+    font-size: 15px;
+    color: #555555;
+}
+
+.stat-card b {
+    color: #1a1a1a;
+    font-size: 18px;
+    display: block;
+    margin-top: 5px;
+}
+
+.secondary-btn {
+    background-color: #e0e0e0;
+    color: #333333;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.secondary-btn:hover {
+    background-color: #cccccc;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    transition: opacity 0.3s;
+}
+
+.cart-item.is-bought {
+    opacity: 0.6;
+    background-color: #f1f8f5;
+    border-color: #c3e6cb;
+}
+
+.cart-item.is-bought .item-name {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-transform: capitalize;
+}
+
+.item-details {
+    font-size: 14px;
+    color: #555555;
+}
+
+.item-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.small-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.buy-btn {
+    background-color: #28a745;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}
+
+.danger-btn {
+    background-color: #dc3545;
+}
+
+.danger-btn:hover {
+    background-color: #c82333;
+}
+
+.bought-badge {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 30px;
+    color: #888888;
+    font-style: italic;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px dashed #cccccc;
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .item-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
