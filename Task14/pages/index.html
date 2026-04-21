@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <div class="registration-form">
+        <h2>Create an Account</h2>
+        <form action="#" method="POST">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" class="active-focus" autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+                <span class="help-text">We'll never share your email with anyone else.</span>
+            </div>
+
+            <div class="form-group gender-group">
+                <label class="radio-label">
+                    <input type="radio" name="gender" value="male" checked>
+                    Male
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <div class="select-wrapper">
+                        <select id="country" class="placeholder-select">
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="ukraine">Ukraine</option>
+                            <option value="usa">United States</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Sign Up</button>
+
+            <p class="terms">
+                By clicking the 'Sign Up' button, you confirm that you accept our<br>
+                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+            </p>
+
+            <hr class="divider">
+
+            <div class="login-link">
+                Have an account? <a href="#">Log In</a>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

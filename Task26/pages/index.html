@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цикли</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="page-body">
+    <main class="main-container">
+        <h1 class="page-title">Практичні завдання</h1>
+
+        <section class="task-section">
+            <h2 id="age-output" class="output-title">1. Визначення вікової групи</h2>
+            <div class="input-group">
+                <input type="number" id="age-input" class="text-input" placeholder="Введіть свій вік">
+                <button id="age-btn" class="action-btn">Перевірити</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="symbol-output" class="output-title">2. Спецсимвол клавіші (0-9)</h2>
+            <div class="input-group">
+                <input type="number" id="symbol-input" class="text-input" placeholder="Число від 0 до 9" min="0"
+                    max="9">
+                <button id="symbol-btn" class="action-btn">Показати символ</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="range-sum-output" class="output-title">3. Сума чисел у діапазоні</h2>
+            <div class="input-group">
+                <input type="number" id="range-start" class="text-input" placeholder="Від">
+                <input type="number" id="range-end" class="text-input" placeholder="До">
+                <button id="range-sum-btn" class="action-btn">Порахувати</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="gcd-output" class="output-title">4. Найбільший спільний дільник (НСД)</h2>
+            <div class="input-group">
+                <input type="number" id="gcd-a" class="text-input" placeholder="Число 1">
+                <input type="number" id="gcd-b" class="text-input" placeholder="Число 2">
+                <button id="gcd-btn" class="action-btn">Знайти НСД</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="divisors-output" class="output-title">5. Всі дільники числа</h2>
+            <div class="input-group">
+                <input type="number" id="divisors-input" class="text-input" placeholder="Введіть число">
+                <button id="divisors-btn" class="action-btn">Знайти дільники</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="palindrome-output" class="output-title">6. Паліндром (5-значне число)</h2>
+            <div class="input-group">
+                <input type="number" id="palindrome-input" class="text-input" placeholder="Наприклад: 12321">
+                <button id="palindrome-btn" class="action-btn">Перевірити</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="discount-output" class="output-title">7. Знижка на покупку</h2>
+            <div class="input-group">
+                <input type="number" id="discount-input" class="text-input" placeholder="Сума покупки">
+                <button id="discount-btn" class="action-btn">Порахувати до оплати</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="stats-output" class="output-title">8. Статистика 10 чисел</h2>
+            <div class="input-group">
+                <button id="stats-btn" class="action-btn">Аналізувати</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 class="output-title">9. Дні тижня (Цикл з підтвердженням)</h2>
+            <div class="input-group">
+                <button id="days-btn" class="action-btn">Почати перегляд днів</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 class="output-title">10. Гра "Вгадай число" (Бінарний пошук)</h2>
+            <div class="input-group">
+                <button id="guess-btn" class="action-btn">Почати гру</button>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2 class="output-title">11. Таблиця множення</h2>
+            <div class="input-group">
+                <button id="multiplication-btn" class="action-btn">Згенерувати таблицю</button>
+            </div>
+            <div id="multiplication-output" class="table-grid"></div>
+        </section>
+
+        <section class="task-section">
+            <h2 id="date-output" class="output-title">12. Наступна дата</h2>
+            <div class="input-group">
+                <input type="number" id="day-input" class="text-input date-input" placeholder="ДД">
+                <input type="number" id="month-input" class="text-input date-input" placeholder="ММ">
+                <input type="number" id="year-input" class="text-input date-input" placeholder="РРРР">
+                <button id="date-btn" class="action-btn">Наступний день</button>
+            </div>
+        </section>
+
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
