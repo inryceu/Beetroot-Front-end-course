@@ -17,7 +17,7 @@ jobs:
 
       - name: Inject API Key into JS
         run: |
-          sed -i 's/OMDB_API_KEY_PLACEHOLDER/${{ secrets.OMDB_API_KEY }}/g' Task33/scripts/script.js
+          find . -type f -name "*.js" -exec sed -i 's/OMDB_API_KEY_PLACEHOLDER/${{ secrets.OMDB_API_KEY }}/g' {} +
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
