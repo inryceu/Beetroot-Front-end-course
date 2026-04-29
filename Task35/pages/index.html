@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monticello</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;italic&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="header__nav-wrapper">
+            <div class="container header__nav-container">
+                <a href="#" class="logo">
+                    <img src="../assets/logo.svg" alt="Monticello Logo">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="#about" class="nav__link">ABOUT</a></li>
+                        <li><a href="#projects" class="nav__link">PROJECTS</a></li>
+                        <li><a href="#news" class="nav__link">NEWS</a></li>
+                        <li><a href="#contact" class="nav__link">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="socials">
+                    <a href="#" class="socials__link" aria-label="Facebook">
+                        <svg>
+                            <use href="../assets/sprite.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials__link" aria-label="Twitter">
+                        <svg>
+                            <use href="../assets/sprite.svg#icon-tw"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socials__link" aria-label="Instagram">
+                        <svg>
+                            <use href="../assets/sprite.svg#icon-ig"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__slider-container">
+            <div class="header__slider" id="header-slider">
+                <div class="header__slide">
+                    <h1 class="header__title">SIMPLE & MODERN</h1>
+                    <p class="header__subtitle">WE MAKE THE WORLD'S BEAUTIFUL EVERYDAY</p>
+                </div>
+                <div class="header__slide">
+                    <h1 class="header__title">CREATIVE & CLEAN</h1>
+                    <p class="header__subtitle">BUILDING THE FUTURE TODAY</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="#projects" class="header__scroll-down" aria-label="Scroll down to projects">
+            <svg>
+                <use href="../assets/sprite.svg#icon-arrow-down"></use>
+            </svg>
+        </a>
+    </header>
+
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section__title">WHAT WE DO</h2>
+
+            <div class="project-card">
+                <div class="project-card__image">
+                    <img src="../assets/trade-center.jpg" alt="Trade Center">
+                </div>
+                <div class="project-card__content">
+                    <span class="project-card__subtitle">ONE WORLD</span>
+                    <h3 class="project-card__title">TRADE CENTER</h3>
+                    <p class="project-card__text">Increasing prosperity in our lives can be accomplished by having the
+                        right frame of mind. The truth is, our thoughts are very powerful.</p>
+                    <a href="#" class="btn project-card__btn">MORE DETAILS</a>
+                    <div class="project-card__location">
+                        <svg>
+                            <use href="../assets/sprite.svg#icon-pin"></use>
+                        </svg> New York City, United States - 1776 feet
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card project-card--reverse">
+                <div class="project-card__image">
+                    <img src="../assets/commerce-centre.jpg" alt="Commerce Centre">
+                </div>
+                <div class="project-card__content">
+                    <span class="project-card__subtitle">INTERNATIONAL</span>
+                    <h3 class="project-card__title">COMMERCE CENTRE</h3>
+                    <p class="project-card__text">Successful businesses have many things in common, today we'll look at
+                        the big 'R' of recognition and how a digital advertising network may help.</p>
+                    <a href="#" class="btn project-card__btn">MORE DETAILS</a>
+                    <div class="project-card__location">
+                        <svg>
+                            <use href="../assets/sprite.svg#icon-pin"></use>
+                        </svg> Hong Kong - 1588 feet
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news section" id="news">
+        <div class="container">
+            <h2 class="section__title section__title--white">LATEST NEWS</h2>
+            <div class="news__slider" id="news-slider">
+                <article class="news-card">
+                    <img src="../assets/news-1.jpg" alt="News 1" class="news-card__img">
+                    <div class="news-card__content">
+                        <h4 class="news-card__title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h4>
+                        <p class="news-card__text">Free directories: directories are perfect for customers that are
+                            searching for...</p>
+                        <div class="news-card__author">
+                            <img src="../assets/author-1.jpg" alt="Author Alice Ward">
+                            <div>
+                                <h5>ALICE WARD</h5>
+                                <span>30 DEC 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="../assets/news-2.jpg" alt="News 2" class="news-card__img">
+                    <div class="news-card__content">
+                        <h4 class="news-card__title">EFFECTIVE ADVERTISING POINTERS.</h4>
+                        <p class="news-card__text">Having a home based business is a wonderful asset to your life...</p>
+                        <div class="news-card__author">
+                            <img src="../assets/author-2.jpg" alt="Author John Doe">
+                            <div>
+                                <h5>JOHN DOE</h5>
+                                <span>30 DEC 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="../assets/news-3.jpg" alt="News 3" class="news-card__img">
+                    <div class="news-card__content">
+                        <h4 class="news-card__title">HYPNOTIZE YOURSELF INTO THE GHOST.</h4>
+                        <p class="news-card__text">There are many things that are important to catalog design...</p>
+                        <div class="news-card__author">
+                            <img src="../assets/author-3.jpg" alt="Author Alexa Jane">
+                            <div>
+                                <h5>ALEXA JANE</h5>
+                                <span>30 DEC 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="../assets/news-2.jpg" alt="News 4" class="news-card__img">
+                    <div class="news-card__content">
+                        <h4 class="news-card__title">BUILDING FOR THE FUTURE.</h4>
+                        <p class="news-card__text">Learn how modern architecture is shaping our everyday lives.</p>
+                        <div class="news-card__author">
+                            <img src="../assets/author-2.jpg" alt="Author Alice Ward">
+                            <div>
+                                <h5>ALICE WARD</h5>
+                                <span>31 DEC 2017</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <h2 class="section__title">GALLERY</h2>
+            <div class="gallery__grid">
+                <img src="../assets/gallery-1.jpg" alt="Gallery image 1" class="gallery__item gallery__item--large">
+                <img src="../assets/gallery-2.jpg" alt="Gallery image 2" class="gallery__item">
+                <img src="../assets/gallery-3.jpg" alt="Gallery image 3" class="gallery__item">
+                <img src="../assets/gallery-4.jpg" alt="Gallery image 4" class="gallery__item">
+                <img src="../assets/gallery-5.jpg" alt="Gallery image 5" class="gallery__item">
+            </div>
+            <div class="gallery__action">
+                <button class="btn btn--outline">SEE MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div id="map" class="contact__map"></div>
+
+        <div class="container contact__container">
+            <div class="contact-card">
+                <h2 class="contact-card__title">GET IN TOUCH</h2>
+                <div class="contact-card__info">
+                    <p><svg>
+                            <use href="../assets/sprite.svg#icon-pin"></use>
+                        </svg> 91 Nolan Extensions Suite 670</p>
+                    <p><svg>
+                            <use href="../assets/sprite.svg#icon-pin"></use>
+                        </svg> +001 356-868-2454</p>
+                    <p><svg>
+                            <use href="../assets/sprite.svg#icon-pin"></use>
+                        </svg> monticello@service.com</p>
+                    <p><svg>
+                            <use href="../assets/sprite.svg#icon-pin"></use>
+                        </svg> From 07:05AM to 19:30PM</p>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" name="name" placeholder="Name" required class="contact-form__input">
+                    <input type="email" name="email" placeholder="Email" required class="contact-form__input">
+                    <button type="submit" class="btn contact-form__btn">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href="#" class="logo">
+                <img src="../assets/logo.svg" alt="Monticello Logo">
+            </a>
+            <p class="footer__copyright">Copyright 2020 &copy; Monticello. All rights reserved.</p>
+            <div class="socials socials--footer">
+                <a href="#" class="socials__link" aria-label="Facebook"><svg>
+                        <use href="../assets/sprite.svg#icon-fb"></use>
+                    </svg></a>
+                <a href="#" class="socials__link" aria-label="Twitter"><svg>
+                        <use href="../assets/sprite.svg#icon-tw"></use>
+                    </svg></a>
+                <a href="#" class="socials__link" aria-label="Instagram"><svg>
+                        <use href="../assets/sprite.svg#icon-ig"></use>
+                    </svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
