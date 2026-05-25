@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "cssnano": "^8.0.1",
+    "gulp-postcss": "^10.0.0"
+  },
+  "dependencies": {
+    "gulp": "^5.0.1"
+  }
+}
